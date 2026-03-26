@@ -38,6 +38,9 @@ console.log('Database connection established');
 
 // Initialize controller
 const noteController = new NoteController();
+app.get("/", (req, res) => {
+  res.send("API is running 🚀");
+});
 
 // Setup routes
 app.use('/api/auth', authRoutes);
@@ -59,6 +62,10 @@ const io = new Server(expressServer, {
     credentials: true
   },
 });
+
+console.log("🔌 Socket.IO allowed origin:", 
+  process.env.NODE_ENV === 'production' ? process.env.CLIENT_URL : "http://localhost:5173"
+);
 
 // Setup Socket.IO events
 setupNoteSocket(io, noteController);
