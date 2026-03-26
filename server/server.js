@@ -31,6 +31,7 @@ app.use(cors({
   credentials: true
 }));
 
+app.use(express.json());
 // Setup database
 await connectDB();
 console.log('Database connection established');
