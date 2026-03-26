@@ -185,7 +185,7 @@ export default function Page() {
             <button
               onClick={() =>
                 window.open(
-                  "https://github.com/SidhuAchary02/quickpad",
+                  "https://github.com/akshitgauttam321",
                   "_blank"
                 )
               }
@@ -340,18 +340,18 @@ export default function Page() {
           <p className="mb-1 text-[#404040] dark:text-zinc-300">
             Built by{" "}
             <a
-              href="https://github.com/SidhuAchary02"
+              href="https://github.com/akshitgauttam321"
               target="_blank"
               className="font-semibold hover:underline text-[#404040] dark:text-white"
             >
-              @SidhuAchary02
+              @akshit321
             </a>
           </p>
 
           <p className="text-[#404040] dark:text-zinc-300">
             quickpad is open-source on{" "}
             <a
-              href="https://github.com/SidhuAchary02/quickpad"
+              href="https://github.com/akshitgauttam321"
               target="_blank"
               className="font-medium hover:underline text-[#404040] dark:text-white"
             >
